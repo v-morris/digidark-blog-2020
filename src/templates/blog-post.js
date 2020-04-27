@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
+import Footer from '../components/footer';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -58,6 +59,7 @@ class BlogPostTemplate extends React.Component {
               )}
             </li>
           </LinkList>
+          <Footer />
         </Container>
       </Layout>
     );

@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import Bio from '../components/bio';
+import Footer from '../components/footer';
 import Post from '../components/post';
 import media from '../utils/media';
 
@@ -31,6 +31,7 @@ class BlogIndex extends Component {
             return <Post key={node.id} node={node} />;
           })}
         </main>
+        <Footer />
       </Layout>
     );
   }

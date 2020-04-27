@@ -13,11 +13,11 @@ import {
 import styled from 'styled-components';
 
 const Container = styled.div`
-  margin: 1rem 0 5rem;
+  margin: 1rem 0 1rem;
 
   .social-icon {
     display: inline-block;
-    margin: 0 0.5rem;
+    margin-right: 0.5rem;
     cursor: pointer;
   }
 `;
