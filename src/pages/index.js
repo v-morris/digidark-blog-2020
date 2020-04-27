@@ -25,7 +25,6 @@ class BlogIndex extends Component {
     return (
       <Layout>
         <SEO title="All Posts" keywords={[`gatsby`, `blog`, `react`]} />
-        <Bio />
         <main>
           <Title>Latest Posts</Title>
           {posts.map(({ node }) => {

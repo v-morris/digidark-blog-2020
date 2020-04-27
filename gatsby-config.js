@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Blog Starter`,
-    description: `A Blog starter`,
-    author: `Boy with Silver Wings`,
-    authorTagline: 'Engineer. Driven by Passion',
+    title: `DigiDark Development`,
+    description: `Coding Tutorials by V Morris`,
+    author: `V Morris`,
+    authorTagline: 'Engineer',
     social: {
-      twitter: `agneymenon`,
+      twitter: `digidarkdev`,
     },
   },
   plugins: [
@@ -67,7 +67,6 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
     'gatsby-plugin-offline',

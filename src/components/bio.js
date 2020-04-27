@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
-import Image from 'gatsby-image';
 
 import media from '../utils/media';
 import Twitter from '../images/social/twitter.svg';
@@ -21,12 +20,6 @@ const Container = styled.div`
 const TextContainer = styled.div`
   ${media.phone`
     order: 2;
-  `}
-`;
-
-const ImageContainer = styled.div`
-  ${media.phone`
-    order: 1;
   `}
 `;
 
@@ -72,9 +65,6 @@ const Bio = () => (
               <TwitterIcon src={Twitter} alt="twitter" />
             </a>
           </TextContainer>
-          <ImageContainer>
-            <Image fixed={data.avatar.childImageSharp.fixed} alt={author} />
-          </ImageContainer>
         </Container>
       );
     }}
@@ -82,14 +72,7 @@ const Bio = () => (
 );
 
 const bioQuery = graphql`
-  query BioQuery {
-    avatar: file(absolutePath: { regex: "/icon.png/" }) {
-      childImageSharp {
-        fixed(width: 70, height: 70) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
+  query {
     site {
       siteMetadata {
         author
