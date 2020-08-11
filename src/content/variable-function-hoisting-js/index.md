@@ -38,7 +38,8 @@ movieTitle = 'Toy Story'
 5. **function scope:** visible to only the specific function (local scope)  
 
 ## Variable Hoisting
----
+---  
+
 ### Declaring variables with var
 
 One way to declare a new variable in JavaScript is with the use of var. Let's look at our first issue when using var.
