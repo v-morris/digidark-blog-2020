@@ -35,7 +35,8 @@ var movieTitle = 'Resident Evil';
 movieTitle = 'Toy Story'
 ```
 4. **global scope:** visible to every function or block in your application
-5. **function scope:** visible to only the specific function (local scope)
+5. **function scope:** visible to only the specific function (local scope)  
+
 ## Variable Hoisting
 ---
 ### Declaring variables with var
